@@ -1,0 +1,24 @@
+.container{
+    width: 100%;
+    height: 900px;
+    background-color: #D9AFD9;
+background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+display: grid;
+justify-content: center
+;
+align-items: center;
+grid-template-columns: repeat(3,1);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.item1{
+    display: grid;
+    grid-template-rows: repeat(3,1);
+    
+    height: 40px;
+    width: 40px;
+background-color: #0b0f0f;
+}

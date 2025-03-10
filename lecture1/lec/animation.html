@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: aqua;
+            width: 100vw;
+            height: 100vh;
+            border: solid black 4px;
+            
+        }
+        .box{
+            width: 350px;
+            height: 80px;
+            background-color: olive;
+            border: 3px solid darkorange;
+            border-radius: 10px;
+            position: relative;
+            margin: 10px;
+           animation-name: rightmovement;
+           animation-duration: 5s;
+           animation-iteration-count: infinite;
+          /* animation-delay: 0;*/
+           animation-timing-function:linear;
+          animation-direction: alternate;
+         /*_ animation-fill-mode: forwards;*/
+          animation-play-state: running;
+          /* duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+/*animation: 3s ease-in 1s 2 reverse both paused slide-in;*/
+
+        }
+        @keyframes rightmovement{
+            from{
+              top: 0;
+              left: 0;
+            }
+            to{
+              top: 0;
+              left: 1200px;
+            }
+        }
+        #box2{
+            width: 350px;
+            height: 80px;
+            background-color: olive;
+            border: 3px solid darkorange;
+            border-radius: 10px;
+            position: relative;
+            margin: 10px;
+           animation-name: leftmovement;
+           animation-duration: 5s;
+           animation-iteration-count: infinite;
+          /* animation-delay: 0;*/
+           animation-timing-function:linear;
+           animation-play-state: running;
+         animation-direction: alternate;
+         /* animation-fill-mode: forwards;*/
+        }
+        @keyframes leftmovement{
+            from{
+              top: 400px;
+              left: 1350px;
+            }
+            to{
+              top: 400px;
+              left: 0px;
+            }
+        }
+        #circle{
+            width: 100px;
+            height: 100px;
+            background-color: olive;
+            border: 3px solid darkorange;
+            border-radius: 50px;
+            position: relative;
+            top: 100px;
+            left: 300px;
+            animation-name: circlemovement;
+           animation-duration: 10s;
+           animation-iteration-count: infinite;
+          /* animation-delay: 0;*/
+           animation-timing-function:linear;
+           animation-play-state: running;
+         animation-direction: alternate;
+        }
+        @keyframes circlemovement{
+           0% {
+            top: 1%;
+            left: 5%px;
+            }
+           30% {
+             top: 45%;
+             left: 90%;
+            }
+            60%{
+                top: 56%;
+                left: 23%;
+            }
+            100%{
+                top: 89%;
+                left: 97%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box"></div>  
+    <div id="box2"></div>
+    <div id="circle"></div>
+</div>
+</body>
+</html>

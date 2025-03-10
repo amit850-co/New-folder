@@ -1,0 +1,136 @@
+
+.container{
+    height: 100vh;
+    width: 100wh;
+    overflow-x: none;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    
+}
+.navcontainer{
+    width: 100vw;
+  /*  background-color: rgb(132, 132, 194); */
+  background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+   
+}
+#navlist{
+    padding: 15px;
+    width: 100%;
+    list-style: none; 
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    /*margin-left: 15px;
+    margin-right: 15px;*/
+    align-items: center;
+ }
+ #navlogo{
+    font-size: 2.8rem;
+    color: beige;
+ }
+ a{
+  text-decoration: none;  
+  color: beige;
+ }
+ #nevitems{
+    display: flex;
+    gap: 40px;
+ }
+ .footerbox{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    
+    width: 100%; 
+    text-align: center;
+    min-height: 40px;
+ }
+ .footerbox p{
+    color: azure;
+    font-size: 2rem;
+ }
+ .contentbox{
+    width: 70%;
+   
+    margin: auto;
+   /* border: 1px solid black;*/
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+     gap: 100px;
+     padding: 3px;
+     box-shadow: 1px 1px 30px black;
+ }
+ .item{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+ }
+ .rightbox {
+   position: relative;
+   overflow: hidden;
+ 
+  
+ }
+ .rightbox img{
+   height: 250px;
+   border-radius: 20px;
+   transition: all 0.3s linear 0s;
+;
+
+   }
+.rightbox img:hover{
+   transform :scale(1.1)
+   
+}
+ 
+ .leftbox{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+ }
+ .leftbox h2{
+   font-size: 2rem;
+ }
+ .box{
+   font-size: 1.3rem;
+ }
+ .recipebox{
+   font-size: 1.1rem;
+ }
+ .rightbox .overlayy{
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(54, 54, 54, 0.658);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 20px;
+   opacity: 0;
+   
+ }
+ .rightbox .overlayy span{
+color: white;
+font-size: 1.2rem;
+
+ }
+ .rightbox:hover.overlayy{
+   opacity: 1;
+ }
